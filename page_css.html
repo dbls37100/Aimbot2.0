@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="page_css.css">
+    <link rel="stylesheet" href="https://use.typekit.net/aob6kcn.css">
+    <title>Cascading Style Sheets</title>
+</head>
+
+<body>
+    <header>
+        <div class="haut">
+            <div class="logo1">
+                <img class="logo" src="aimbot.png"
+                    alt="MDN logo">
+            </div>
+            <div class="nav1">
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle" />
+                <div class="menu">
+                    <a class="burger" href="page-acceuil.html">Accueil</a>
+                    <a class="burger" href="apropos.html">À propos</a>
+                    <a class="burger" href="form.html">Contact</a>
+                    <a class="burger" href="#">Discussion</a>
+                    <a class="burger" href="#">Faire un don</a>
+                    <a class="burger" href="https://fr.wikipedia.org/wiki/Foire_aux_questions">FAQ</a>
+                    <a class="burger"
+                        href="https://www.journaldunet.fr/business/dictionnaire-du-marketing/1198321-mentions-legales-definition-traduction/">Mentions
+                        legal</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="texte">
+        <p><strong>"Knowing is not enough, we must APPLY. Willing is not enough, we must DO."</strong><em> Bruce
+                Lee</em></p>
+    </div>
+    <img src="https://zupimages.net/up/19/38/37r8.png" alt="Logo-CSS" width="200px" class="logo-CSS" />
+    <h1 id="haut">Cascading Style Sheets</h1>
+    <header class="top"><a href="#haut" class="top">↑</a></header>
+    <p>Le CSS est un langage qui permet de gérer la présentation d'une page Web. Le langage CSS est une recommandation
+        du World Wide Web Consortium (W3C), au même titre que HTML ou XML.</p>
+    <nav>
+        <ul class="catégorie">
+            <li>Comment s'appliquent le CSS aux éléments HTML ?</li>
+            <li>Appliquer des ID et des classes</li>
+            <li>Exemple 1</li>
+        </ul>
+        <ul class="catégorie">
+            <li>Exemple 4</li>
+            <li>Exemple 5</li>
+            <li>Exemple 6</li>
+        </ul>
+    </nav>
+    <h2>Comment s'appliquent le CSS aux éléments HTML ?</h2>
+    <p>Avec les CSS, vous pouvez changer la présentation de toutes les balises HTML standards. Il vous suffit de
+        spécifier le nom de la balise et de faire figurer vos définitions comme suit :</p>
+    <img src="https://zupimages.net/up/19/38/gdyu.png" />
+    <p>Le code ci-dessus aura pour effet de mettre en gras et d'augmenter la hauteur de ligne de tous les paragraphes.
+        La syntaxe générale de définition est la suivante :</p>
+    <ol>
+        <li>Préciser le nom de la balise en premier</li>
+        <li>Encadrer les définitions par des accolades "{ }"</li>
+        <li>Placer un point virgule ; derrière chaque définition</li>
+    </ol>
+    <h2>Appliquer des ID et des classes</h2>
+    <p>Vous pouvez attribuer à chaque élément HTML une ou plusieurs classes. C'est vous qui définirez le nom de ces
+        classes et qui déciderez de leurs styles. Les styles définis dans les classes remplaceront les styles "normaux"
+        des éléments auxquels ils s'appliquent. Pour créer une classe, vous devez simplement faire figurer son nom
+        précédé d'un point. Pour éviter toute ambiguïté, votre nom de classe ne doit pas comporter d'espace.</p>
+    <img src="https://zupimages.net/up/19/38/xpv8.png">
+    <p>Pour appliquer le style défini dans votre classe à un élément, ajouter la mention class="nom-du style" dans la
+        définition de la balise :</p>
+    <img src="https://zupimages.net/up/19/38/ttl6.png">
+    <p>Cette façon de procéder est très pratique car elle permet d'appliquer les réglages de votre classes et de
+        nombreux éléments, même s'ils ne sont pas du même type : </p>
+    <img src="https://zupimages.net/up/19/38/06xb.png">
+    <p>Les éléments HTML peuvent se voir attribuer un "ID" (identification) en plus ou à la place d'une classe. Le
+        principe de l'ID est très similaire à celui de la classe à une exception prés :</p>
+    <ol>
+        <li>Plusieurs éléments peuvent avoir la même classe</li>
+        <li>Il ne doit y avoir qu'un seul élément ayant un ID donné</li>
+    </ol>
+    <p>Vous pourriez parfaitement vous contenter d'utiliser les classes pour tous vos styles et oublier complètement
+        l'existence des ID. Leur utilisation permet simplement de clarifier les choses et de mieux structurer vos pages
+        :</p>
+    <ol>
+        <li>On utilise les classes pour définir l'aspect des mots, phrases et paragraphes</li>
+        <li>On utilise les ID pour placer des blocs dans la page (sachant qu'on a généralement jamais deux blocs placés
+            exactement au même endroit)</li>
+    </ol>
+    <img src="https://zupimages.net/up/19/38/5ig4.png">
+    <p>Pour créer un ID, vous devez simplement faire figurer son nom précédé d'un dièse #. Pour éviter toute ambiguïté,
+        votre nom d'ID ne doit pas comporter d'espace.</p>
+    <img src="https://zupimages.net/up/19/38/x5b1.png">
+    <h2>Principe de Boites</h2>
+    <p>Avec les CSS, tout tourne autour de boîtes : définir leurs tailles, leurs couleurs, leurs positions, etc. Les
+        éléments HTML d'une page peuvent, pour la plupart, être vus comme des boîtes placées les unes sur les autres.
+        C'est pour cette raison que l'architecture de CSS est principalement basée sur un modèle de boîtes. Chacun de
+        ces blocs prend un certain espace sur la page, de cette façon :</p>
+    <ul>
+        <li>Padding : l'espace autour, proche du contenu (par exemple, l'espace autour du texte d'un paragraphe) (en
+            français, on pourrait traduire cela par du « remplissage » mais le terme padding étant communément utilisé
+            lorsqu'on parle de CSS, on continuera à utiliser ce terme)</li>
+        <li>Border : la ligne qui est juste autour du padding (en français cela correspond à la bordure)</li>
+        <li>margin : l'espace extérieur, autour de l'élément (en français cela correspond à la marge)</li>
+    </ul>
+    <img src="https://zupimages.net/up/19/38/fg7y.png" width="380px">
+    <br>
+    <hr>
+    <footer>
+        <a href="https://www.youtube.com"><img class="imagebas"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSojcl4UGf1Q-ouYrZXfXf6WmOT2ehjseqkL7WbrwWjwiMw68YR"
+                alt="imgbouton"></a>
+        <a href="https://www.facebook.com"><img class="imagebas"
+                src="https://brandpalettes.com/wp-content/uploads/2018/05/facebook_color_codes-300x300.png"
+                alt="imgbouton"></a>
+        <a href="https://www.twitter.com"><img class="imagebas"
+                src="https://seeklogo.com/images/T/twitter-logo-C591CF37A1-seeklogo.com.png" alt="imgbouton"></a>
+    </footer>
+</body>
+
+</html>
